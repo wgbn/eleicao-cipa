@@ -1,0 +1,18 @@
+<app-layout class="cadastro-component">
+
+  <h1>Cadastro</h1>
+
+  <form class="form-cadastro" #cadForm="ngForm" (onSubmit)="cadastrar(cadForm)">
+
+    <label for="nome">Nome</label>
+    <input type="text" name="nome" id="nome" [(ngModel)]="candidato.nome">
+
+    <label for="setor">Setor</label>
+    <input type="text" name="setor" id="setor" [(ngModel)]="candidato.setor">
+
+    <br>
+    <button type="submit">Salvar</button>
+
+  </form>
+
+</app-layout>

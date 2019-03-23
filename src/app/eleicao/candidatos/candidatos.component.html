@@ -1,10 +1,14 @@
 <app-layout>
-    <div class="lista">
-        <app-card (result)="cardClick($event)" nome="José" setor="TI" imagem="http://picsum.photos/150/150?random"></app-card>
-        <app-card nome="Pedro" setor="Nutrição" imagem="http://picsum.photos/150/150?random"></app-card>
-        <app-card nome="Carmem" setor="Governança" imagem="http://picsum.photos/150/150?random"></app-card>
-        <app-card nome="Josefo" setor="Serviços Gerais" imagem="http://picsum.photos/150/150?random"></app-card>
-        <app-card nome="Bolsonaro" setor="Abestalhado" imagem="http://picsum.photos/150/150?random"></app-card>
-        <app-card nome="Carlos" setor="Contabilidade" imagem="http://picsum.photos/150/150?random"></app-card>
+
+    <div class="lista" *ngIf="candidatos.length > 0 else botao">
+
+        <app-card *ngFor="let candidato of candidatos" 
+            [nome]="candidato.nome" [setor]="candidato.setor" [imagem]="candidato.imagem"></app-card>
+
     </div>
+
+    <ng-template #botao>
+            <ion-button color="success" (click)="carregar()">carregar candidatos</ion-button>
+    </ng-template>
+
 </app-layout>
