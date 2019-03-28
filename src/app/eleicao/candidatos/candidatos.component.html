@@ -1,14 +1,10 @@
 <app-layout>
 
-    <div class="lista" *ngIf="candidatos.length > 0 else botao">
+    <div class="lista" *ngIf="candidatos.length > 0">
 
         <app-card *ngFor="let candidato of candidatos" 
             [nome]="candidato.nome" [setor]="candidato.setor" [imagem]="candidato.imagem"></app-card>
 
     </div>
-
-    <ng-template #botao>
-            <ion-button color="success" (click)="carregar()">carregar candidatos</ion-button>
-    </ng-template>
 
 </app-layout>

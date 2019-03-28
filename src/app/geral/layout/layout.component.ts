@@ -12,9 +12,4 @@ export class LayoutComponent implements OnInit {
 
   ngOnInit() {}
 
-  cadastro() {
-    console.log('cadastro');
-    this.router.navigate['/eleicao/cadastro'];
-  }
-
 }
