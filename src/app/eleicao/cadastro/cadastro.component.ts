@@ -40,4 +40,8 @@ export class CadastroComponent implements OnInit {
 
   }
 
+  voltar() {
+    this.local.back();
+  }
+
 }

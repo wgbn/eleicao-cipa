@@ -49,3 +49,23 @@ export class Candidato {
     this.imagem = _imagem;
   }
 }
+
+export class People {
+  gender: string;
+  name: Name;
+  email: string;
+  login: any;
+  dob: any;
+  registered: any;
+  phone: string;
+  cell: string;
+  id: any;
+  picture: any;
+  nat: string;
+}
+
+export class Name {
+  title?: string;
+  first?: string;
+  last?: string;
+}

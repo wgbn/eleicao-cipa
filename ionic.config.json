@@ -1,5 +1,7 @@
 {
   "name": "eleicoes-cipa",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

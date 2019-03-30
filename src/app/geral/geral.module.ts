@@ -5,6 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { LayoutComponent } from './layout/layout.component';
 import { CardComponent } from './card/card.component';
 import { RouterModule } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -16,13 +17,15 @@ import { RouterModule } from '@angular/router';
     CommonModule,
     IonicModule,
     FormsModule,
-    RouterModule
+    RouterModule,
+    HttpClientModule // @angular/common/http
   ],
 
   exports: [
     CommonModule,
     IonicModule,
     FormsModule,
+    HttpClientModule,
     LayoutComponent,
     CardComponent
   ]
