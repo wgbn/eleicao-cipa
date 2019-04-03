@@ -1,5 +1,6 @@
 import {Injectable} from '@angular/core';
 import {_ParseAST} from '@angular/compiler';
+import CANDIDATOS from '../../assets/candidatos.json';
 
 @Injectable({
     providedIn: 'root'
@@ -11,6 +12,10 @@ export class EleicaoService {
     constructor() {
         const _temp = localStorage.getItem('candidatos');
         this._candidatos = _temp ? JSON.parse(_temp) : [];
+
+        if (this._candidatos.length == 0) {
+            this._candidatos = [...CANDIDATOS];
+        }
     }
 
     getCandidatos(): Candidato[] {
