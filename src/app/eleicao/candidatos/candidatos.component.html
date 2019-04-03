@@ -2,7 +2,7 @@
 
     <div class="lista" *ngIf="candidatos.length > 0">
 
-        <app-card *ngFor="let candidato of candidatos" 
+        <app-card *ngFor="let candidato of candidatos; let idx = index;" (result)="cardClick(idx)"
             [nome]="candidato.nome" [setor]="candidato.setor" [imagem]="candidato.imagem"></app-card>
 
     </div>

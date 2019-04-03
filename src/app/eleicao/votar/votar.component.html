@@ -1,0 +1,19 @@
+<app-layout class="votar-page">
+
+  <div class="candidato">
+    <img [src]="candidato.imagem">
+    <div class="dados">
+      <h2>{{candidato.nome}}</h2>
+      <h4>{{candidato.setor}}</h4>
+    </div>
+  </div>
+
+  <div class="voto">
+
+    <ion-button color="success" size="large" (click)="votar()">SIM</ion-button>
+
+    <ion-button color="danger" size="large" (click)="location.back()">NÃO</ion-button>
+
+  </div>
+
+</app-layout>

@@ -1,0 +1,35 @@
+.resultado-page, .senha-page {
+  width: 100%;
+  min-height: calc(100vh - 70px);
+
+  .res {
+    display: flex;
+    border-bottom: 1px solid #c0c0c0;
+
+    img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+    }
+
+    .dados {
+      padding: 1em;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      strong, em {
+        display: block;
+        width: 100%;
+        font-size: 2em;
+      }
+    }
+  }
+}
+
+.senha-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}

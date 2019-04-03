@@ -1,0 +1,23 @@
+<app-layout>
+  <div class="resultado-page" *ngIf="show else pass">
+    <ion-button color="dark" (click)="location.back()">voltar</ion-button>
+    <div class="res" *ngFor="let cand of candidatos">
+      <img [src]="cand.imagem">
+      <div class="dados">
+        <strong>{{cand.nome}}</strong>
+        <em>{{cand.votos}} votos</em>
+      </div>
+    </div>
+
+  </div>
+
+  <ng-template #pass>
+
+    <div class="senha-page">
+      <input type="password" placeholder="senha" [(ngModel)]="senha">
+      <ion-button (click)="entrar()">entrar</ion-button>
+      <ion-button color="dark" (click)="location.back()">cancelar</ion-button>
+    </div>
+
+  </ng-template>
+</app-layout>
