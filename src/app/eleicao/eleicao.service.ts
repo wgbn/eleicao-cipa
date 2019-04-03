@@ -1,6 +1,97 @@
 import {Injectable} from '@angular/core';
-import {_ParseAST} from '@angular/compiler';
-import CANDIDATOS from '../../assets/candidatos.json';
+// import CANDIDATOS from '../../assets/candidatos.json';
+const CANDIDATOS = [
+    {
+        "nome": "Allan",
+        "setor": "Centro Médico",
+        "imagem": "/assets/imgs/allan.jpeg"
+    },
+    {
+        "nome": "Diego Menezes",
+        "setor": "Centro Médico",
+        "imagem": "/assets/imgs/diego-menezes.jpeg"
+    },
+    {
+        "nome": "Diego de Assis",
+        "setor": "Jardim",
+        "imagem": "/assets/imgs/diego-assis.jpeg"
+    },
+    {
+        "nome": "Edson",
+        "setor": "Nutrição",
+        "imagem": "/assets/imgs/edson.jpeg"
+    },
+    {
+        "nome": "Elias",
+        "setor": "Infermagem",
+        "imagem": "/assets/imgs/elias.jpeg"
+    },
+    {
+        "nome": "Fredson",
+        "setor": "Portaria",
+        "imagem": "/assets/imgs/fredson.jpeg"
+    },
+    {
+        "nome": "Fábio",
+        "setor": "Motorista",
+        "imagem": "/assets/imgs/fabio.jpeg"
+    },
+    {
+        "nome": "Fábio Adriano",
+        "setor": "Prof. Yoga",
+        "imagem": "/assets/imgs/fabio-yoga.jpeg"
+    },
+    {
+        "nome": "Gil Humberto",
+        "setor": "Governança",
+        "imagem": "/assets/imgs/gil.jpeg"
+    },
+    {
+        "nome": "Gilmar",
+        "setor": "Portaria",
+        "imagem": "/assets/imgs/gilmar.jpeg"
+    },
+    {
+        "nome": "Joramaclei",
+        "setor": "Nutrição",
+        "imagem": "/assets/imgs/joramaclei.jpeg"
+    },
+    {
+        "nome": "Juliana",
+        "setor": "Governança",
+        "imagem": "/assets/imgs/juliana.jpeg"
+    },
+    {
+        "nome": "Marcela",
+        "setor": "Nutrição",
+        "imagem": "/assets/imgs/marcela.jpeg"
+    },
+    {
+        "nome": "Marivaldo",
+        "setor": "Portaria",
+        "imagem": "/assets/imgs/marivaldo.jpeg"
+    },
+    {
+        "nome": "Rogério",
+        "setor": "Nutrição",
+        "imagem": "/assets/imgs/rogerio.jpeg"
+    },
+    {
+        "nome": "Samia",
+        "setor": "Compras",
+        "imagem": "/assets/imgs/samia.jpeg"
+    },
+    {
+        "nome": "Ualton",
+        "setor": "Nutrição",
+        "imagem": "/assets/imgs/ualton.jpeg"
+    },
+    {
+        "nome": "Verena Veron",
+        "setor": "Recepção",
+        "imagem": "/assets/imgs/verena.jpeg"
+    }
+];
 
 @Injectable({
     providedIn: 'root'
