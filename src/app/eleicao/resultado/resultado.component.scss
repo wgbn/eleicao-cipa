@@ -1,5 +1,6 @@
 .resultado-page, .senha-page {
   width: 100%;
+  min-height: 90vh;
   min-height: calc(100vh - 70px);
 
   .res {
@@ -24,6 +25,10 @@
         font-size: 2em;
       }
     }
+  }
+  .botoes {
+    padding-bottom: .5em;
+    text-align: right;
   }
 }
 

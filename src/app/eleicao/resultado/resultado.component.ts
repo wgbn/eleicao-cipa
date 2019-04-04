@@ -28,4 +28,9 @@ export class ResultadoComponent implements OnInit {
         }
     }
 
+    zerar() {
+        this.eleicao.zerar();
+        this.candidatos = this.eleicao.getCandidatos();
+    }
+
 }

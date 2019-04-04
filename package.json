@@ -10,7 +10,9 @@
     "build": "npx ionic build --prod --aot",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "android": "npx ionic cordova run android",
+    "android-live": "npx ionic cordova run android -lcs"
   },
   "private": true,
   "dependencies": {

@@ -140,6 +140,11 @@ export class EleicaoService {
         this.saveLocal();
     }
 
+    zerar() {
+        this._candidatos = [...CANDIDATOS];
+        this.saveLocal();
+    }
+
 }
 
 export class Candidato {

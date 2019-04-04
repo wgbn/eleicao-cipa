@@ -1,6 +1,11 @@
 <app-layout>
   <div class="resultado-page" *ngIf="show else pass">
-    <ion-button color="dark" (click)="location.back()">voltar</ion-button>
+
+    <div class="botoes">
+      <ion-button color="dark" (click)="location.back()">voltar</ion-button>
+      <ion-button color="danger" (click)="zerar()">zerar</ion-button>
+    </div>
+
     <div class="res" *ngFor="let cand of candidatos">
       <img [src]="cand.imagem">
       <div class="dados">
